@@ -6,27 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KL Color Pallette & Hex Color Changer </title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <section id="main-container">
     <!--Start Header Section -->
-        <header id="header inner-container">
-            <div class="logo">
-                <h1>Color Match</h1> 
-            </div>
-            <div class="navbar">
-                <ul>
-                    <li class="nav-link" id="pallette">Colour Pallette</li>
-                    <li class="nav-link" id="single">Single Color</li>
-                    <li class="nav-link" id="clear">Clear</li>
-                    <li class="nav-link" id="save">Save</li>
-                </ul>
-            </div>
+        <header id="header">
+                <div class="inner-container header-flex">
+                
+                <div class="logo">
+                    <h1>Color Match</h1> 
+                </div>
+                
+                <div class="navbar">
+                    <ul>
+                        <li class="nav-link" id="pallette"><button class="btn">Colour Pallette</button></li>
+                        <li class="nav-link" id="single"><button class="btn">Single Color</button></li>
+                        <li class="nav-link" id="clear"><button class="btn">Clear</button></li>
+                        <li class="nav-link" id="save"><button class="btn">Save</button></li>
+                    </ul>
+                </div>
+
+                </div>
+            
         </header>
 
     <!--Start Main Section -->
-        <main id="main-section inner-container">
-            <section id="single-color-section">
+        <main id="main-section">
+            <section id="single-color-section" class="inner-container">
                 <h1 id="main-header">
                     Background Color : <span id="specific-color">Blue</span>
                 </h1>
@@ -37,7 +46,7 @@
 
             </section>
         </main>
-        <footer><p>Built by <a href="#">Kerlan London</a></p></footer>
+        <footer class="inner-container"><p>Built by <a href="#">Kerlan London</a></p></footer>
     </section>
     
 

@@ -1,17 +1,23 @@
-(function() {
-  document.getElementById("btn").addEventListener("click", function(event){
-    let inputVal = document.getElementById("int-message").value 
-    if (Boolean(inputVal) === false ) {
-      document.getElementById("error").style.display = "inline-block"
-      setTimeout(()=>{
-        document.getElementById("error").style.display = "none"
-      }, 2000)
-    } else {
-      document.getElementById("message").innerText = inputVal
-      document.getElementById("int-message").value = ""
+(function(){
+let totalVal = 0
+function colorNum(){
+  if(totalVal < 0) {
+    document.getElementById("number").style.color = "var(--main-red)"
+  } else if (totalVal > 0) {
+    document.getElementById("number").style.color = "var(--main-green)"
+  } else {
+    document.getElementById("number").style.color = "var(--main-grey)"
+  }
+  document.getElementById("number").textContent = totalVal
+}
 
-    }
-    
-    //console.log(document.getElementById("int-message").value)
-  })
+document.getElementById("btn-low").addEventListener("click", function(){
+  totalVal--
+  colorNum()
+})
+document.getElementById("btn-add").addEventListener("click", function(){
+  totalVal++
+ colorNum()
+})
+
 })()

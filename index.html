@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pass The Message </title>
+    <title>Counter</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,23 +13,14 @@
 </head>
 <body>
     <section id="background-container" class="flex-center">
-        <section id="message-container" class="flex-center">
-            <h1 id="h1" class="margin-bottom">
-                A messge you would like to pass
-            </h1>
-            <input type="text" id="int-message" name="int-message" class="margin-bottom">
-            
-            <button id="btn" class="margin-bottom">
-                Submit Query
-            </button>
-            <p id="error" class="margin-bottom alert">Please enter a value to pass</p>
-            <h2 id="h2" class="margin-bottom">
-                Last Message Delivered
-            </h2>
-            <p id="message">
-                Hello World
-            </p>
-        </section>
+        <main id="counter-container" class="flex-center">
+            <h1 id="h1" class="uppercase font-ctrl">counter</h1>
+            <p id="number">0</p>
+            <section id="buttons-sec">
+                <button id="btn-low" class="btn uppercase ">lower count</button>
+                <button id="btn-add" class="btn uppercase">add count</button>
+            </section>
+        </main>
     </section>
 
     <script src="https://kit.fontawesome.com/80f4d653b3.js" crossorigin="anonymous"></script>

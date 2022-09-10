@@ -1,23 +1,7 @@
-(function(){
-let totalVal = 0
-function colorNum(){
-  if(totalVal < 0) {
-    document.getElementById("number").style.color = "var(--main-red)"
-  } else if (totalVal > 0) {
-    document.getElementById("number").style.color = "var(--main-green)"
-  } else {
-    document.getElementById("number").style.color = "var(--main-grey)"
-  }
-  document.getElementById("number").textContent = totalVal
-}
-
-document.getElementById("btn-low").addEventListener("click", function(){
-  totalVal--
-  colorNum()
-})
-document.getElementById("btn-add").addEventListener("click", function(){
-  totalVal++
- colorNum()
-})
-
+(function () {
+  const colors = ["blue", "green", "orange", "yellow", "pink", "aquamareen", "black", "brown", "grey" , "red"]
+  document.getElementById("btn-main").addEventListener("click", function(){
+    let x = Math.floor(Math.random() * colors.length)
+    document.getElementById("background-container").style.backgroundColor = colors[x]
+  })
 })()

@@ -17,10 +17,6 @@ body{
     --light-blue: #00a6ed;
 
 }
-.font-ctrl {
-    font-weight: 300;
-    font-size: 2.5rem;
-}
 .margin-bottom {
     margin-bottom: 1.5rem;
 }
@@ -34,54 +30,25 @@ body{
 }
 
 #background-container {
-    background-image: url(https://js-beginners.github.io/counter-project/img/mainBcg.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; 
-    height: 100vh;
+    background-color: #008000;
     width: 100%;
-}
-
-#counter-container{
-    
-    flex-direction: column;
-    width: 50%;
-    max-width: 600px;
-    border: 1px solid var(--main-white);
-    border-radius: 4px;
-    box-shadow: 0 6px 10px black;
-}
-
-#h1 {
-    color: var(--main-white);
-    margin-top: 4rem;
-}
-
-#number {
-    font-size: 12rem;
-}
-
-#buttons-sec {
-    width: 60%;
-    padding: 0 0.3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 4rem;
+    height: 100vh;
 }
 
 .btn {
-    background-color: var(--dark-blue);
-    color: var(--main-white);
-    border: none;
     font-size: 1rem;
-    padding: 0.6rem 0.6rem; 
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: var(--main-grey);
+    border: 1px solid var(--main-grey);
     border-radius: 4px;
-    box-shadow: 1px 4px 8px black;
-    margin: 0 4px;
+}
+.btn:hover, .btn:focus {
+    background-color: var(--main-grey);
+    color: var(--main-white);
+    cursor: pointer;
 }
 
-.btn:hover{
-    background-color: #00a6ed;
-    cursor: pointer;
+.btn:focus {
+    border: 1px solid var(--light-blue);
 }
